@@ -82,11 +82,6 @@ public class MySqlSample {
         password = "root"; // password that I set in my install. POOR PASSWORD!
 
         // load and register JDBC driver then connect to database
-        // Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new 
-        // driver class is `com.mysql.cj.jdbc.Driver'. 
-        // The driver is automatically registered via the SPI and manual 
-        // loading of the driver class is generally unnecessary.
-
         try {
             DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
             System.out.println("Registering MySQL Driver successful");
